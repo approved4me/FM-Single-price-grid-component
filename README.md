@@ -10,6 +10,8 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
+Live: https://approved4me.github.io/FM-Single-price-grid-component/
+
 ## The challenge
 
 Your users should be able to:
