@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    max-width: 90rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+RESET END
+*/
+
+:root {
+    --primary-cyan: hsl(179, 62%, 43%);
+    --primary-bright_yellow: hsl(71, 73%, 54%);
+    --neutral-light_gray: hsl(204, 43%, 93%);
+    --neutral-grayish_blue: hsl(218, 22%, 67%);
+}
+
+main {
+    margin: 0 auto;
+    margin-block: 1rem;
+    max-width: 40rem;
+}
+
+article {
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.card {
+    background-color: #fff;
+    color: var(--neutral-grayish_blue);
+    padding: 1.5rem;
+}
+
+.card .price {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.card .price span {
+    font-weight: 400;
+    font-size: 1rem;
+    vertical-align: middle;
+    color: var(--neutral-light_gray);
+    opacity: 0.6;
+}
+
+.even:nth-child(2) p {
+    font-size: 1rem;
+}
+
+.card .btn {
+    border: none;
+    background-color: var(--primary-bright_yellow);
+    color: var(--neutral-light_gray);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.card h1 {
+    color: var(--primary-cyan);
+}
+
+.top h2 {
+    color: var(--primary-bright_yellow);
+    font-size: 1.1rem;
+    padding-block-end: 1rem;
+}
+
+.even {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.even h2 {
+    padding-block-end: 1rem;
+    font-size: 1.3rem;
+}
+
+.even:nth-child(2) {
+    background-color: var(--primary-cyan);
+    color: var(--neutral-light_gray);
+}
+
+.even:last-child {
+    background-color: hsl(179, 50%, 55%);
+    color: var(--neutral-light_gray);
+}
+
+
+
+footer {
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 60rem) {
+    ...
+}
