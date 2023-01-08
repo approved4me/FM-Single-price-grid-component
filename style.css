@@ -100,7 +100,7 @@ article {
     padding-bottom: 1rem;
 }
 
-.top h2 {
+.top .offer {
     color: var(--primary-bright_yellow);
     font-size: 1rem;
     padding-block-end: 1rem;
