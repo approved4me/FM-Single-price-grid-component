@@ -81,10 +81,6 @@ article {
     opacity: 0.6;
 }
 
-.even:nth-child(2) p {
-    font-size: 1rem;
-}
-
 .card .btn {
     border: none;
     background-color: var(--primary-bright_yellow);
@@ -99,11 +95,12 @@ article {
 
 .card h1 {
     color: var(--primary-cyan);
+    padding-bottom: 1rem;
 }
 
 .top h2 {
     color: var(--primary-bright_yellow);
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-block-end: 1rem;
 }
 
@@ -114,12 +111,13 @@ article {
 
 .even h2 {
     padding-block-end: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-.even:nth-child(2) {
+.even:first-child {
     background-color: var(--primary-cyan);
     color: var(--neutral-light_gray);
+    font-size: 1rem;
 }
 
 .even:last-child {
@@ -127,7 +125,9 @@ article {
     color: var(--neutral-light_gray);
 }
 
-
+.even:last-child p {
+    max-width: 22ch;
+}
 
 footer {
     margin: 0 auto;
@@ -147,5 +147,12 @@ footer {
 /* MEDIA QUERY */
 
 @media only screen and (min-width: 60rem) {
-    ...
+    .bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        padding: 2.5rem;
+    }
 }
